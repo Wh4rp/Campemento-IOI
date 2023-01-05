@@ -9,17 +9,15 @@
       
       
       
-        <link rel="prev" href="../../dia-2/grafos_1/">
+        <link rel="prev" href="../logaritmos/">
       
-      
-        <link rel="next" href="../problema_parentesis_balanceados/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
-        <title>Logaritmos - Campamento IOI 2023</title>
+        <title>Problema parentesis balanceados - Campamento IOI 2023</title>
       
     
     
@@ -67,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#apendice-logaritmo" class="md-skip">
+        <a href="#problema-parentesis-balanceados" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Logaritmos
+              Problema parentesis balanceados
             
           </span>
         </div>
@@ -370,6 +368,20 @@
               
   
   
+  
+    <li class="md-nav__item">
+      <a href="../logaritmos/" class="md-nav__link">
+        Logaritmos
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
     
   
   
@@ -381,55 +393,10 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Logaritmos
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Logaritmos
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nota-importante" class="md-nav__link">
-    Nota importante
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../problema_parentesis_balanceados/" class="md-nav__link">
         Problema parentesis balanceados
       </a>
+      
     </li>
   
 
@@ -461,21 +428,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nota-importante" class="md-nav__link">
-    Nota importante
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -490,22 +442,29 @@
 
 
 
-<h1 id="apendice-logaritmo">Apéndice logaritmo</h1>
-<p>Recordemos que cada operación básica tiene su inverso.</p>
-<div class="arithmatex">\[
-a+b \rightarrow a-b
-\]</div>
-<div class="arithmatex">\[
-a \cdot b \rightarrow \frac{a}{b}
-\]</div>
-<p>También la operación de la potencia <span class="arithmatex">\(a^b\)</span> tienen su inverso que se le conoce como <em>logaritmo</em>.</p>
-<p>Si queremos saber el <span class="arithmatex">\(x\)</span> que soluciona:</p>
-<div class="arithmatex">\[
-a^x = b
-\]</div>
-<p>La notación que usamos es <span class="arithmatex">\(x = \log_a(b)\)</span> que se lee como logaritmo en base <span class="arithmatex">\(a\)</span> de <span class="arithmatex">\(b\)</span>.</p>
-<h2 id="nota-importante">Nota importante</h2>
-<p>Los logaritmos son muy pequeños para los rangos que se ocupan en programación competitiva, son casi constantes cuando estamos viendo complejidad. Por lo que es muy conveniente encontrar un logaritmo en la complejidad de una solución.</p>
+<h1 id="problema-parentesis-balanceados">Problema paréntesis balanceados</h1>
+<p>Dado que consiste de sólo paréntesis determine si la expresión está balanceada o no. Se entiende por paréntesis balanceado que cada paréntesis <code>(</code> tiene su par <code>)</code> correspondiente que lo cierra a si derecha.</p>
+<p>Por ejemplo <code>(()())</code> es balanceado, pero <code>(()</code> no.</p>
+<p>La solución a este problema es con una pilas. Se recorre la expresión y se van guardando los paréntesis que se van encontrando. Si se encuentra un paréntesis de cierre <code>)</code> se saca el último paréntesis de la pila y se verifica que sea de apertura <code>(</code>. Si no es así, la expresión no está balanceada. Si la pila está vacía y se encuentra un paréntesis de cierre, la expresión no está balanceada. Al final, si la pila está vacía, la expresión está balanceada.</p>
+<pre><code class="language-cpp">bool balanceado(string s){
+    stack&lt;char&gt; pila;
+    for(char c : s){
+        if(c == '('){
+            pila.push(c);
+        }else{
+            if(pila.empty()){
+                return false;
+            }
+            char d = pila.top();
+            pila.pop();
+            if(d != '('){
+                return false;
+            }
+        }
+    }
+    return pila.empty();
+}
+</code></pre>
 
 
 
