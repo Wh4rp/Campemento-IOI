@@ -2,17 +2,20 @@ site_name: Campamento OCI 2023
 
 nav:
   - Dia 1:
-    - Complejidad: day_1/complexity.md
-    - Búsqueda binaria: day_1/binary_search.md
-    - STL: day_1/stl.md
-  - Apéndice: appendix/index.md
+    - Complejidad: dia-1/complejidad.md
+    - Búsqueda binaria: dia-1/busqueda_binaria.md
+    - STL: day-1/stl.md
+  - Apéndice:
+    - Logaritmos: apendice/logaritmos.md
 
 theme:
   name: material
+  language: en
+  font:
+    text: Open Sans
   features:
     - navigation.indexes
     - content.code.annotate
-  language: en
 
 markdown_extensions:
   - pymdownx.arithmatex:
