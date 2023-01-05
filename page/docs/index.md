@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Campamento IOI 2023
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Temario
 
-## Commands
+### Día 1
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [complejidad](dia-1/complejidad.md)
+- [búsqueda binaria](dia-1/busqueda_binaria.md)
+- [stl](dia-1/stl.md)

@@ -1,6 +1,6 @@
 # Temario
 
-- Discucion de problemas del contest anterior
+- Discusión de problemas del contest anterior
 - Grafos
 
 ## Problemas

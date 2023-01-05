@@ -1,10 +1,10 @@
-site_name: Campamento OCI 2023
+site_name: Campamento IOI 2023
 
 nav:
   - Dia 1:
     - Complejidad: dia-1/complejidad.md
     - Búsqueda binaria: dia-1/busqueda_binaria.md
-    - STL: day-1/stl.md
+    - STL: dia-1/stl.md
   - Apéndice:
     - Logaritmos: apendice/logaritmos.md
 

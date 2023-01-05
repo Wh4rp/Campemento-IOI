@@ -136,7 +136,7 @@ Ahora veamos cual es su complejidad. Primero recordemos que la complejidad de un
 
 Asi, el algoritmo de Merge Sort tiene complejidad $\mathcal{O}(n \cdot \log_2(n))$.
 
-Si no sabes que es un logaritmo ver [apéndice](../appendix/logarithm.md).
+Si no sabes que es un logaritmo ver [apéndice](../apeendice/logaritmos).
 
 ### Código de Merge Sort
 
