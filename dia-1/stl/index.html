@@ -9,13 +9,17 @@
       
       
       
+        <link rel="prev" href="../busqueda_binaria/">
+      
+      
+        <link rel="next" href="../../apendice/logaritmos/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
-        <title>Librería Estandar de `C++` (STL) - Campamento OCI 2023</title>
+        <title>STL - Campamento IOI 2023</title>
       
     
     
@@ -77,7 +81,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Campamento OCI 2023" class="md-header__button md-logo" aria-label="Campamento OCI 2023" data-md-component="logo">
+    <a href="../.." title="Campamento IOI 2023" class="md-header__button md-logo" aria-label="Campamento IOI 2023" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -90,13 +94,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Campamento OCI 2023
+            Campamento IOI 2023
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Librería Estandar de `C++` (STL)
+              STL
             
           </span>
         </div>
@@ -163,13 +167,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Campamento OCI 2023" class="md-nav__button md-logo" aria-label="Campamento OCI 2023" data-md-component="logo">
+    <a href="../.." title="Campamento IOI 2023" class="md-nav__button md-logo" aria-label="Campamento IOI 2023" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    Campamento OCI 2023
+    Campamento IOI 2023
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -180,12 +184,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" checked>
       
       
       
@@ -242,11 +248,219 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../day-1/stl.md" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          STL
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         STL
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set" class="md-nav__link">
+    Set
+  </a>
+  
+    <nav class="md-nav" aria-label="Set">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema-de-cartas-de-pony" class="md-nav__link">
+    Problema de Cartas de Pony
+  </a>
+  
+    <nav class="md-nav" aria-label="Problema de Cartas de Pony">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solucion-con-busqueda-binaria" class="md-nav__link">
+    Solución con búsqueda binaria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion-con-set" class="md-nav__link">
+    Solución con set
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#map" class="md-nav__link">
+    Map
+  </a>
+  
+    <nav class="md-nav" aria-label="Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-contar-cosas-con-un-mapa" class="md-nav__link">
+    Cómo contar cosas con un mapa
+  </a>
+  
+    <nav class="md-nav" aria-label="Cómo contar cosas con un mapa">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#las-posibilidades-estan-en-tu-imaginacion" class="md-nav__link">
+    Las posibilidades están en tu imaginación
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#problema-del-pony-2" class="md-nav__link">
+    Problema del pony 2
+  </a>
+  
+    <nav class="md-nav" aria-label="Problema del pony 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solucion-con-map" class="md-nav__link">
+    Solución con map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queue" class="md-nav__link">
+    Queue
+  </a>
+  
+    <nav class="md-nav" aria-label="Queue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#problema-de-registro-ioi" class="md-nav__link">
+    Problema de registro IOI
+  </a>
+  
+    <nav class="md-nav" aria-label="Problema de registro IOI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solucion-con-queue" class="md-nav__link">
+    Solución con queue
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stack" class="md-nav__link">
+    Stack
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deque" class="md-nav__link">
+    Deque
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#priority-queue" class="md-nav__link">
+    Priority Queue
+  </a>
+  
+    <nav class="md-nav" aria-label="Priority Queue">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comparar-de-menor-a-mayor" class="md-nav__link">
+    Comparar de menor a mayor
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmos-ya-implementados-en-la-stl" class="md-nav__link">
+    Algoritmos ya implementados en la STL
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#referencias-de-la-stl" class="md-nav__link">
+    Referencias de la STL
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -337,14 +551,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#problema-del-pony" class="md-nav__link">
-    Problema del pony
+  <a href="#set" class="md-nav__link">
+    Set
   </a>
   
-    <nav class="md-nav" aria-label="Problema del pony">
+    <nav class="md-nav" aria-label="Set">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#problema-de-cartas-de-pony" class="md-nav__link">
+    Problema de Cartas de Pony
+  </a>
+  
+    <nav class="md-nav" aria-label="Problema de Cartas de Pony">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solucion-con-busqueda-binaria" class="md-nav__link">
+    Solución con búsqueda binaria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#solucion-con-set" class="md-nav__link">
+    Solución con set
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#map" class="md-nav__link">
     Map
   </a>
@@ -354,14 +600,15 @@
         
           <li class="md-nav__item">
   <a href="#como-contar-cosas-con-un-mapa" class="md-nav__link">
-    Como contar cosas con un mapa
+    Cómo contar cosas con un mapa
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Cómo contar cosas con un mapa">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#las-posibilidades-estan-en-su-imaginacion" class="md-nav__link">
-    Las posibilidades estan en su imaginacion
+  <a href="#las-posibilidades-estan-en-tu-imaginacion" class="md-nav__link">
+    Las posibilidades están en tu imaginación
   </a>
   
 </li>
@@ -376,9 +623,27 @@
     Problema del pony 2
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="Problema del pony 2">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#solucion-con-map" class="md-nav__link">
+    Solución con map
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#queue" class="md-nav__link">
     Queue
   </a>
@@ -391,6 +656,14 @@
     Problema de registro IOI
   </a>
   
+    <nav class="md-nav" aria-label="Problema de registro IOI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solucion-con-queue" class="md-nav__link">
+    Solución con queue
+  </a>
+  
 </li>
         
       </ul>
@@ -398,21 +671,26 @@
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#stack" class="md-nav__link">
     Stack
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#deque" class="md-nav__link">
     Deque
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#priority-queue" class="md-nav__link">
     Priority Queue
   </a>
@@ -431,15 +709,17 @@
     </nav>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#algoritmos-ya-implementados-en-la-stl" class="md-nav__link">
+    Algoritmos ya implementados en la STL
+  </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#algoritmos-ya-implementados" class="md-nav__link">
-    Algoritmos ya implementados
+  <a href="#referencias-de-la-stl" class="md-nav__link">
+    Referencias de la STL
   </a>
   
 </li>
@@ -460,107 +740,202 @@
 
 
 
-<h1 id="libreria-estandar-de-c-stl">Librería Estandar de <code>C++</code> (STL)</h1>
-<p>Cuando ocupan vectores en <code>C++</code> ocupan la librería estándar de <code>C++</code> (STL). Quizás para ocupar vectores ocupas añadir la línea <code>#include &lt;vector&gt;</code> al principio de tu código. Podemos importar todas las herramientas que trae la librería estándar de <code>C++</code> con <code>#include &lt;bits/stdc++.h&gt;</code>.</p>
+<h1 id="libreria-estandar-de-c-stl">Librería Estándar de <code>C++</code> (STL)</h1>
+<p>Cuando ocupan vectores en <code>C++</code> están usando la librería estándar (STL). Quizás para ocupar vectores añades la línea <code>#include &lt;vector&gt;</code> al principio de tu código. Podemos importar todas las herramientas que trae la librería estándar de <code>C++</code> (vectores incluidos) con <code>#include &lt;bits/stdc++.h&gt;</code>.</p>
 <p>Lo que nos interesa es aprovechar las estructuras que trae consigo la STL.</p>
-<h2 id="problema-del-pony">Problema del pony</h2>
+<h2 id="set">Set</h2>
+<p>Set, conjunto en inglés, es una estructura que viene en la STL. Set es un conjunto en el cual añadir elementos y preguntar si un elemento está en el conjunto toma tiempo <span class="arithmatex">\(\mathcal{O}(\log(N))\)</span>.</p>
+<pre><code class="language-cpp">set&lt;int&gt; cartas;  // crea un set vacio, en vez de int
+                  // puedes poner otros tipos de datos
+                  // ver importante 2
+cartas.insert(x); // inserta el elemento x
+cartas.count(x);  // pregunta si x esta en el set
+                  // regresa 0 si no esta y 1 si esta
+cartas.erase(x);  // borra el elemento x
+</code></pre>
+<p>Importante 1: el set no permite elementos repetidos. Para tener elementos repetidos ocupas un <code>multiset</code>. Sin embargo (Marinkvich) no lo recomienda, en vez de eso puedes ocupar un <code>map</code> que es otra estructura que viene en la STL.</p>
+<p>Importante 2: Sólo se permiten sets de valores comparables. El tipo de dato con el cual se crea el set debe tener un sentido de orden. Se pueden hacer sets de <code>string</code> o <code>vectores</code>.</p>
+<p>Importante 3: No podemos acceder a una posición del set por indice.</p>
+<h3 id="problema-de-cartas-de-pony">Problema de Cartas de Pony</h3>
+<p>Resumen: Javier tiene <span class="arithmatex">\(N\)</span> cartas de un juego de cartas que pueden tener el valor de <span class="arithmatex">\(1\)</span> al <span class="arithmatex">\(10^9\)</span>. Tú tarea es responser una cantidad <span class="arithmatex">\(M\)</span> (de a lo más <span class="arithmatex">\(10^5\)</span>) preguntas, responder si una carta está en el mazo o no.</p>
 <!-- (resumen del problema inded) -->
 
-<p>Se podia resolver metiendo todas las cartas en el arreglo, ordenando el arreglo y luego buscando la carta que queríamos.</p>
-<p>Pero podemos ocupar un <code>set</code> que es una estructura que viene en la STL.</p>
-<p><code>set&lt;int&gt; cartas;</code></p>
-<p>Lo que hace un <code>set</code> es insertar un elemento <span class="arithmatex">\(x\)</span></p>
-<p><code>cartas.insert(x);</code> <span class="arithmatex">\(O(\log(n))\)</span></p>
-<p>Y también hacer preguntas del tipo: esta <span class="arithmatex">\(y\)</span> en el <code>set</code>?</p>
-<p><code>cartas.count(y)</code> <span class="arithmatex">\(O(\log(n))\)</span></p>
-<p>Y borrar un elemento <span class="arithmatex">\(x\)</span> del <code>set</code>.</p>
-<p><code>cartas.erase(x)</code> <span class="arithmatex">\(O(\log(n))\)</span></p>
-<p>Importante 1: el set no te permite elementos repetidos. Para tener elementos repetidos ocupas un <code>multiset</code>. Sin enmbargo (Marinkvich) no lo recomienda y es preferible usar mapas.</p>
-<p>Importante 2: Valores comparables. Para ocupar un set siempre tiene que haber un sentido de orden. Por eso se pueden hacer sets de <code>string</code> o <code>vectores</code>.</p>
-<p>Importante 3: No podemos acceder a una posicion del set por indice.</p>
-<h3 id="map">Map</h3>
-<p>El <code>map</code> es el hijo del <code>vector</code> y el <code>set</code>. En un vector tenemos hartos valores y podemos acceder a ellos por su indice. En un set tenemos hartos valores y podemos preguntar si un valor esta en el set.</p>
-<p>En el mapa podemos tener hartos valores y podemos preguntar si un valor esta en el mapa y podemos acceder a ellos por su llave. Esta llave, a diferencia del vector que debe ser desde el <span class="arithmatex">\(0\)</span>, puede ser cualquier valor (hasheable) que queramos.</p>
-<p>Definimos el mapa</p>
-<p><code>map&lt;int, int&gt; mapa;</code></p>
-<p>Asociamos una llave <span class="arithmatex">\(x\)</span> a un valor <span class="arithmatex">\(y\)</span></p>
-<p><code>mapa[1] = 2;</code></p>
-<p>Accedemos al valor asociado a la llave <span class="arithmatex">\(x\)</span></p>
-<p><code>mapa[1];</code></p>
-<h4 id="como-contar-cosas-con-un-mapa">Como contar cosas con un mapa</h4>
-<p>Supongamos que tenemos un arreglo de <span class="arithmatex">\(n\)</span> elementos y queremos saber cuantas veces esta cada elemento. Podemos tener un mapa <code>M</code> que te responda a <code>M[x]</code> cuantas veces esta el elemento <code>x</code>.</p>
-<p>El mapa tiene las mismas operaciones que el <code>set</code>. <code>M.count(x)</code> responde <code>0</code> no existe la llave <code>x</code> y <code>1</code> si existe la llave <code>x</code>.</p>
+<h4 id="solucion-con-busqueda-binaria">Solución con búsqueda binaria</h4>
+<p>Se podia resolver metiendo todas las cartas en un arreglo o vector, ordenando el arreglo y luego buscar cada carta con una búsqueda binaria. Esto es <span class="arithmatex">\(\mathcal{O}(N\log(N))\)</span>.</p>
+<h4 id="solucion-con-set">Solución con set</h4>
+<p>Otra solución es ocupar un <code>set</code>. Guardamos los valores de las cartas en un set y luego preguntamos si cada carta está en el set.</p>
+<pre><code class="language-cpp">set&lt;int&gt; cartas;
+for (int i = 0; i &lt; N; i++) {
+  int x;
+  cin &gt;&gt; x;
+  cartas.insert(x);
+}
+
+int M;
+cin &gt;&gt; M;
+for (int i = 0; i &lt; M; i++) {
+  int x;
+  cin &gt;&gt; x;
+  if (cartas.count(x)) {
+    cout &lt;&lt; &quot;SI&quot; &lt;&lt; endl;
+  } else {
+    cout &lt;&lt; &quot;NO&quot; &lt;&lt; endl;
+  }
+}
+</code></pre>
+<h2 id="map">Map</h2>
+<p>El <code>map</code> es el hijo del <code>vector</code> y el <code>set</code>. En un vector tenemos hartos valores y podemos acceder a ellos por su indice. En un set tenemos hartos valores y podemos preguntar si un valor está o no en el set.</p>
+<p>En el mapa podemos tener hartos valores, podemos preguntar si un valor esta en el mapa y podemos acceder a ellos por su llave. Esta llave, a diferencia del vector que debe ser desde el <span class="arithmatex">\(0\)</span>, puede ser cualquier valor (hasheable) que queramos.</p>
+<pre><code class="language-cpp">map&lt;int, int&gt; mapa; // crea un mapa vacio
+                    // en vez de int, int puedes poner
+                    // cualquier tipo de dato
+
+mapa[x] = y;        // asigna el valor y a la llave x
+mapa[x];            // regresa el valor asociado a la llave x
+mapa.count(x);      // pregunta si la llave x esta en el mapa
+                    // regresa 0 si no esta y 1 si esta
+mapa.erase(x);      // borra la llave x y su valor asociado
+</code></pre>
+<h3 id="como-contar-cosas-con-un-mapa">Cómo contar cosas con un mapa</h3>
+<p>Supongamos que tenemos un arreglo de <span class="arithmatex">\(n\)</span> elementos y queremos saber cuantas veces está cada elemento. Podemos tener un mapa <code>M</code> que el valor de <code>M[x]</code> sea cuantas veces está el elemento <code>x</code>.</p>
+<p><code>M.count(x)</code> responde <code>0</code> no existe la llave <code>x</code> y <code>1</code> si existe la llave <code>x</code>.</p>
 <p>Todas sus operaciones son <span class="arithmatex">\(O(\log(n))\)</span>.</p>
-<h4 id="las-posibilidades-estan-en-su-imaginacion">Las posibilidades estan en su imaginacion</h4>
+<h4 id="las-posibilidades-estan-en-tu-imaginacion">Las posibilidades están en tu imaginación</h4>
 <p>Podemos tener arreglos que accedamos por strings y que regresa un vector de enteros.</p>
 <h3 id="problema-del-pony-2">Problema del pony 2</h3>
-<p>(resumen del problema inded)</p>
-<p>Ta cambio la carta <span class="arithmatex">\(x\)</span> por la carta <span class="arithmatex">\(y\)</span>?</p>
+<p>Resumen: Javier ahora quiere intercambiar cartas con Martín. Te piden verificar si una cierta cantidad intercambio de cartas son posible. Para ello, tienes que responder si es posible intercambiar la carta <span class="arithmatex">\(x\)</span> por la carta <span class="arithmatex">\(y\)</span>. Se puede intercambiar siempre y cuando Javier disponga de la carta <span class="arithmatex">\(x\)</span>. Te dan la lista de cartas que tiene Javier que pueden ser números del <span class="arithmatex">\(1\)</span> al <span class="arithmatex">\(10^9\)</span>.</p>
+<h4 id="solucion-con-map">Solución con map</h4>
 <p>Podemos ocupar un mapa que cuenta las veces que se tiene cada carta.</p>
-<h3 id="queue"><code>Queue</code></h3>
-<p>Fila en ingles. Nos permite simular una fila. No podemos usar un <code>vector</code> para esto ya que este no nos permite sacar elementos del principio del arreglo.</p>
-<p><code>queue&lt;int&gt; fila;</code></p>
-<p>A;ade un elemento</p>
-<p><code>fila.push(x)</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Elimina el elemento del principio</p>
-<p><code>fila.pop()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Accede al elemento del principio</p>
-<p><code>fila.front()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<h4 id="problema-de-registro-ioi">Problema de registro IOI</h4>
-<p>(resumen del problema inded)</p>
-<p>Resuelve este problema de manera directa. Ocupa una cola para simular la fila de personas.</p>
-<h3 id="stack"><code>Stack</code></h3>
-<p>Pila en ingles. Nos permite simular una pila. Donde lo que sacamos es el primer elemento y lo que a;adimos es al incio de la pila. Como una pila de platos.</p>
-<p><code>stack&lt;int&gt; pila;</code></p>
-<p>A;ade un elemento al inicio</p>
-<p><code>pila.push(x)</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Elimina el elemento del principio</p>
-<p><code>pila.pop()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Accede al elemento del principio</p>
-<p><code>pila.top()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<h3 id="deque"><code>Deque</code></h3>
+<pre><code class="language-cpp">map&lt;int, int&gt; cartas;
+for (int i = 0; i &lt; N; i++) {
+  int x;
+  cin &gt;&gt; x;
+  cartas[x]++;
+}
+
+int M;
+cin &gt;&gt; M;
+for (int i = 0; i &lt; M; i++) {
+  int x, y;
+  cin &gt;&gt; x &gt;&gt; y;
+  if (cartas.count(x) &amp;&amp; cartas[x] &gt; 0) {
+    cout &lt;&lt; &quot;SI&quot; &lt;&lt; endl;
+    cartas[x]--;
+    cartas[y]++;
+  } else {
+    cout &lt;&lt; &quot;NO&quot; &lt;&lt; endl;
+  }
+}
+</code></pre>
+<h2 id="queue">Queue</h2>
+<p>Fila en inglés. Nos permite simular una fila. No conviene usar un <code>vector</code> ya que este no nos permite sacar elementos del principio.</p>
+<pre><code class="language-cpp">queue&lt;int&gt; fila; // crea una fila vacia
+fila.push(x);    // añade un elemento al final
+fila.pop();      // elimina el elemento del principio
+fila.front();    // regresa el valor elemento del principio
+fila.empty();    // pregunta si la fila esta vacia
+                 // regresa false si no esta vacia y true si esta vacia
+</code></pre>
+<h3 id="problema-de-registro-ioi">Problema de registro IOI</h3>
+<p>Resumen: Hay una fila que tiene que ser atendida. Existen dos eventos, la llegada de una persona y que Nacho atienda la inscripción. En el primer caso está persona se añade a la cola. En el segundo si no hay nadie en la cola se imprime un <code>1</code> y si hay alguien se imprime el número de la persona que está siendo atendida y se elimina de la cola.</p>
+<h4 id="solucion-con-queue">Solución con queue</h4>
+<p>Resuelve este problema de manera directa usando un <code>queue</code>.</p>
+<pre><code class="language-cpp">queue&lt;int&gt; fila;
+int N;
+cin &gt;&gt; N;
+for (int i = 0; i &lt; N; i++) {
+  string s;
+  int x;
+  cin &gt;&gt; s &gt;&gt; x;
+  if (s == &quot;A&quot;) {
+    fila.push(x);
+  } else {
+    if (fila.empty()) {
+      cout &lt;&lt; 1 &lt;&lt; endl;
+    } else {
+      cout &lt;&lt; fila.front() &lt;&lt; endl;
+      fila.pop();
+    }
+  }
+}
+</code></pre>
+<h2 id="stack">Stack</h2>
+<p>Pila en ingles. Nos permite simular una pila. Donde lo que sacamos es el primer elemento y añadimos elementos es al inicio de la pila. Como una pila de platos.</p>
+<pre><code class="language-cpp">stack&lt;int&gt; pila; // crea una pila vacia
+pila.push(x);    // añade un elemento al principio
+pila.pop();      // elimina el elemento del principio
+pila.top();      // regresa el valor elemento del principio
+pila.empty();    // pregunta si la pila esta vacia
+                 // regresa false si no esta vacia y true si esta vacia
+</code></pre>
+<h2 id="deque">Deque</h2>
 <p>Es una cola doble. Nos permite sacar y quitar elementos del principio y del final.</p>
-<p><code>deque&lt;int&gt; cola;</code></p>
-<p>A;ade un elemento al final</p>
-<p><code>cola.push_back(x)</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>A;ade un elemento al principio</p>
-<p><code>cola.push_front(x)</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Elimina el elemento del final</p>
-<p><code>cola.pop_back()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Elimina el elemento del principio</p>
-<p><code>cola.pop_front()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Accede al elemento del final</p>
-<p><code>cola.back()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Accede al elemento del principio</p>
-<p><code>cola.front()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<p>Nota: el <code>deque</code> pese a ser muy util muchas veces solo queremos ocupar la utilidad de una cola o una pila. Ademas que la <code>deque</code> es menos eficiente.</p>
-<h3 id="priority-queue"><code>Priority Queue</code></h3>
-<p>Es una cola de prioridad. Nos permite tener una cola la cual el primer elemento es siempre el valor mas grande. Por defecto esta ordenada de menor a mayor segun el comparador por defecto.</p>
-<p><code>priority_queue&lt;int&gt; cola;</code></p>
-<p>A;ade un elemento</p>
-<p><code>cola.push(x)</code> <span class="arithmatex">\(O(\log(n))\)</span></p>
-<p>Elimina el elemento del principio</p>
-<p><code>cola.pop()</code> <span class="arithmatex">\(O(\log(n))\)</span></p>
-<p>Accede al elemento del principio</p>
-<p><code>cola.top()</code> <span class="arithmatex">\(O(1)\)</span></p>
-<h4 id="comparar-de-menor-a-mayor">Comparar de menor a mayor</h4>
+<pre><code class="language-cpp">deque&lt;int&gt; cola; // crea una cola vacia
+cola.push_back(x);    // añade un elemento al final
+cola.push_front(x);   // añade un elemento al principio
+cola.pop_back();      // elimina el elemento del final
+cola.pop_front();     // elimina el elemento del principio
+cola.back();          // regresa el valor elemento del final
+cola.front();         // regresa el valor elemento del principio
+cola.empty();         // pregunta si la cola esta vacia
+                      // regresa false si no esta vacia y true si esta vacia
+</code></pre>
+<p>Todo lo hace en <span class="arithmatex">\(\mathcal{O}(1)\)</span>.</p>
+<p>Nota: el <code>deque</code> pese a ser muy útil, muchas veces basta con sólo ocupar una cola o una pila. Además que la <code>deque</code> es menos eficiente.</p>
+<h2 id="priority-queue">Priority Queue</h2>
+<p>Es una cola de prioridad. Nos permite tener una cola la cual el primer elemento es siempre el valor mas grande. Por defecto esta ordenada de menor a mayor según el comparador por defecto.</p>
+<pre><code class="language-cpp">priority_queue&lt;int&gt; cola; // crea una cola vacia
+cola.push(x);    // añade un elemento
+cola.pop();      // elimina el elemento del principio
+cola.top();      // regresa el valor elemento del principio
+cola.empty();    // pregunta si la cola esta vacia
+                 // regresa false si no esta vacia y true si esta vacia
+</code></pre>
+<p>Los costos de hacer <code>push</code>, <code>pop</code> y <code>top</code> son <span class="arithmatex">\(\mathcal{O}(\log(n))\)</span>. Mientras que <code>top</code> es <span class="arithmatex">\(\mathcal{O}(1)\)</span>.</p>
+<h3 id="comparar-de-menor-a-mayor">Comparar de menor a mayor</h3>
 <p>Podemos ocupar un comparador personalizado para que la cola de prioridad ordene de mayor a menor.</p>
-<p><code>priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; cola;</code></p>
-<p>El <code>int</code> se puede cambiar por la clase/tipo de dato de la cola.</p>
-<h2 id="algoritmos-ya-implementados">Algoritmos ya implementados</h2>
+<pre><code class="language-cpp">priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; cola;
+</code></pre>
+<p>El <code>int</code> se puede cambiar por la clase/tipo de dato de la cola, ejemplo <code>greater&lt;pair&lt;int, int&gt;&gt;</code>.</p>
+<h2 id="algoritmos-ya-implementados-en-la-stl">Algoritmos ya implementados en la STL</h2>
 <ul>
-<li>
-<p><code>sort</code>: ordena un vector. <span class="arithmatex">\(O(n\log(n))\)</span> Explicar mas a detalle.</p>
-</li>
-<li>
-<p><code>lower_bound</code>: le pasas un vector y un valor y te dice la posicion del primer elemento mayor o igual al valor. Si no existe te dice la posicion del primer elemento mayor al valor. Hace una busqueda binaria.</p>
-</li>
-<li>
-<p><code>upper_bound</code>: le pasas un vector y un valor y te dice la posicion del primer elemento mayor al valor. Si no existe te dice la posicion del primer elemento mayor al valor. Hace una busqueda binaria.</p>
-</li>
-<li>
-<p><code>find</code>: le pasas un vector y un valor y te dice la posicion del primer elemento igual al valor. Si no existe te dice la posicion del primer elemento mayor al valor. Hace una busqueda lineal.</p>
-</li>
+<li><code>sort</code>: ordena un vector de menor a mayor. El costo es <span class="arithmatex">\(\mathcal{O}(n \log(n))\)</span>.</li>
+</ul>
+<pre><code class="language-cpp">sort(v.begin(), v.end()); // ordena el vector v
+</code></pre>
+<ul>
+<li><code>lower_bound</code>: le pasas un vector y un valor y el iterador que apunta al primer elemento mayor o igual al valor. Si no existe retorna el iterador al final del vector. Hace una búsqueda binaria.</li>
+</ul>
+<pre><code class="language-cpp">auto pos = lower_bound(v.begin(), v.end(), x) - v.begin();
+if (pos == v.end()) {
+  // no existe
+} else {
+  if (*v == x) {
+    // x esta en v
+  } else {
+    // hay un elemento mayor a x
+  }
+}
+</code></pre>
+<ul>
+<li><code>upper_bound</code>: lo mismo que <code>lower_bound</code> pero te regresa el primer elemento mayor al valor. Si no existe retorna el iterador al final del vector. Hace una búsqueda binaria.</li>
+</ul>
+<pre><code class="language-cpp">auto pos = upper_bound(v.begin(), v.end(), x) - v.begin();
+</code></pre>
+<ul>
+<li><code>find</code>: le pasas un vector y un valor y regresa el iterador al primer elemento igual al valor. Si no existe retorna el iterador al final del vector. Hace una búsqueda lineal.</li>
+</ul>
+<pre><code class="language-cpp">auto pos = find(v.begin(), v.end(), x) - v.begin();
+if (pos == v.end()) {
+  // no existe
+} else {
+  // existe
+}
+</code></pre>
+<h2 id="referencias-de-la-stl">Referencias de la STL</h2>
+<ul>
+<li><a href="http://www.cplusplus.com/reference/">C++ Reference</a></li>
+<li><a href="https://en.cppreference.com/w/">Cpp Reference</a></li>
 </ul>
 
 

@@ -17,7 +17,7 @@
     
     
       
-        <title>Complejidad - Campamento OCI 2023</title>
+        <title>Complejidad - Campamento IOI 2023</title>
       
     
     
@@ -79,7 +79,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Campamento OCI 2023" class="md-header__button md-logo" aria-label="Campamento OCI 2023" data-md-component="logo">
+    <a href="../.." title="Campamento IOI 2023" class="md-header__button md-logo" aria-label="Campamento IOI 2023" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -92,7 +92,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Campamento OCI 2023
+            Campamento IOI 2023
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -165,13 +165,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Campamento OCI 2023" class="md-nav__button md-logo" aria-label="Campamento OCI 2023" data-md-component="logo">
+    <a href="../.." title="Campamento IOI 2023" class="md-nav__button md-logo" aria-label="Campamento IOI 2023" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    Campamento OCI 2023
+    Campamento IOI 2023
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -410,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../day-1/stl.md" class="md-nav__link">
+      <a href="../stl/" class="md-nav__link">
         STL
       </a>
     </li>
@@ -769,7 +769,7 @@ for (int i = 0; i &lt; n; i++) {
 <p>En la base de esto estará ordenar el array de un solo elemento, como ya está ordenado (es solo un elemento) podemos retornar este arreglo unitario.</p>
 <p>Ahora veamos cual es su complejidad. Primero recordemos que la complejidad de unir dos arrays ordenados en otro ordenado (merge) es de <span class="arithmatex">\(\mathcal{O}(n)\)</span> con <span class="arithmatex">\(n\)</span> el largo del array final. Pero cada nivel del merge toma <span class="arithmatex">\(\mathcal{O}(n)\)</span>. ¿Cuántos niveles van a haber en total? como en cada paso dividimos el arreglo en 2 va a ser hasta que queden arreglos de tamaño 1. Y esta cantidad sera aproximadamente <span class="arithmatex">\(\log_2(n)\)</span>.</p>
 <p>Asi, el algoritmo de Merge Sort tiene complejidad <span class="arithmatex">\(\mathcal{O}(n \cdot \log_2(n))\)</span>.</p>
-<p>Si no sabes que es un logaritmo ver <a href="../appendix/logarithm.md">apéndice</a>.</p>
+<p>Si no sabes que es un logaritmo ver <a href="../apeendice/logaritmos">apéndice</a>.</p>
 <h3 id="codigo-de-merge-sort">Código de Merge Sort</h3>
 <p>EL código en <code>C++</code> sería el siguiente:</p>
 <pre><code class="language-cpp">void mergeSort(vector&lt;int&gt; &amp;A) {
