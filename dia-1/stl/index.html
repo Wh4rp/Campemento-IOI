@@ -563,12 +563,148 @@
       
       
         <label class="md-nav__link" for="__nav_3">
+          Día 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Día 3" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Día 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dia-3/resolucion_contest_2.md" class="md-nav__link">
+        Resolución Contest 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dia-3/DP.md" class="md-nav__link">
+        Grafos 2
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Día 4
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Día 4" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Día 4
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dia-4/resolucion_contest_3/" class="md-nav__link">
+        Resolución Contest 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dia-4/struct/" class="md-nav__link">
+        Struct
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5">
           Apéndice
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Apéndice" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
+        <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           Apéndice
         </label>
@@ -829,14 +965,14 @@
 <p>Lo que nos interesa es aprovechar las estructuras que trae consigo la STL.</p>
 <h2 id="set">Set</h2>
 <p>Set, conjunto en inglés, es una estructura que viene en la STL. Set es un conjunto en el cual añadir elementos y preguntar si un elemento está en el conjunto toma tiempo <span class="arithmatex">\(\mathcal{O}(\log(N))\)</span>.</p>
-<pre><code class="language-cpp">set&lt;int&gt; cartas;  // crea un set vacio, en vez de int
-                  // puedes poner otros tipos de datos
-                  // ver importante 2
-cartas.insert(x); // inserta el elemento x
-cartas.count(x);  // pregunta si x esta en el set
-                  // regresa 0 si no esta y 1 si esta
-cartas.erase(x);  // borra el elemento x
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cartas</span><span class="p">;</span><span class="w">  </span><span class="c1">// crea un set vacio, en vez de int</span>
+<span class="w">                  </span><span class="c1">// puedes poner otros tipos de datos</span>
+<span class="w">                  </span><span class="c1">// ver importante 2</span>
+<span class="n">cartas</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w"> </span><span class="c1">// inserta el elemento x</span>
+<span class="n">cartas</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">  </span><span class="c1">// pregunta si x esta en el set</span>
+<span class="w">                  </span><span class="c1">// regresa 0 si no esta y 1 si esta</span>
+<span class="n">cartas</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">  </span><span class="c1">// borra el elemento x</span>
+</code></pre></div>
 <p>Importante 1: el set no permite elementos repetidos. Para tener elementos repetidos ocupas un <code>multiset</code>. Sin embargo (Marinkvich) no lo recomienda, en vez de eso puedes ocupar un <code>map</code> que es otra estructura que viene en la STL.</p>
 <p>Importante 2: Sólo se permiten sets de valores comparables. El tipo de dato con el cual se crea el set debe tener un sentido de orden. Se pueden hacer sets de <code>string</code> o <code>vectores</code>.</p>
 <p>Importante 3: No podemos acceder a una posición del set por indice.</p>
@@ -848,38 +984,38 @@ cartas.erase(x);  // borra el elemento x
 <p>Se podia resolver metiendo todas las cartas en un arreglo o vector, ordenando el arreglo y luego buscar cada carta con una búsqueda binaria. Esto es <span class="arithmatex">\(\mathcal{O}(N\log(N))\)</span>.</p>
 <h4 id="solucion-con-set">Solución con set</h4>
 <p>Otra solución es ocupar un <code>set</code>. Guardamos los valores de las cartas en un set y luego preguntamos si cada carta está en el set.</p>
-<pre><code class="language-cpp">set&lt;int&gt; cartas;
-for (int i = 0; i &lt; N; i++) {
-  int x;
-  cin &gt;&gt; x;
-  cartas.insert(x);
-}
+<div class="highlight"><pre><span></span><code><span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cartas</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">N</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cartas</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="p">}</span>
 
-int M;
-cin &gt;&gt; M;
-for (int i = 0; i &lt; M; i++) {
-  int x;
-  cin &gt;&gt; x;
-  if (cartas.count(x)) {
-    cout &lt;&lt; &quot;SI&quot; &lt;&lt; endl;
-  } else {
-    cout &lt;&lt; &quot;NO&quot; &lt;&lt; endl;
-  }
-}
-</code></pre>
+<span class="kt">int</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
+<span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">M</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cartas</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;SI&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;NO&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <h2 id="map">Map</h2>
 <p>El <code>map</code> es el hijo del <code>vector</code> y el <code>set</code>. En un vector tenemos hartos valores y podemos acceder a ellos por su indice. En un set tenemos hartos valores y podemos preguntar si un valor está o no en el set.</p>
 <p>En el mapa podemos tener hartos valores, podemos preguntar si un valor esta en el mapa y podemos acceder a ellos por su llave. Esta llave, a diferencia del vector que debe ser desde el <span class="arithmatex">\(0\)</span>, puede ser cualquier valor (hasheable) que queramos.</p>
-<pre><code class="language-cpp">map&lt;int, int&gt; mapa; // crea un mapa vacio
-                    // en vez de int, int puedes poner
-                    // cualquier tipo de dato
+<div class="highlight"><pre><span></span><code><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">mapa</span><span class="p">;</span><span class="w"> </span><span class="c1">// crea un mapa vacio</span>
+<span class="w">                    </span><span class="c1">// en vez de int, int puedes poner</span>
+<span class="w">                    </span><span class="c1">// cualquier tipo de dato</span>
 
-mapa[x] = y;        // asigna el valor y a la llave x
-mapa[x];            // regresa el valor asociado a la llave x
-mapa.count(x);      // pregunta si la llave x esta en el mapa
-                    // regresa 0 si no esta y 1 si esta
-mapa.erase(x);      // borra la llave x y su valor asociado
-</code></pre>
+<span class="n">mapa</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w">        </span><span class="c1">// asigna el valor y a la llave x</span>
+<span class="n">mapa</span><span class="p">[</span><span class="n">x</span><span class="p">];</span><span class="w">            </span><span class="c1">// regresa el valor asociado a la llave x</span>
+<span class="n">mapa</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">      </span><span class="c1">// pregunta si la llave x esta en el mapa</span>
+<span class="w">                    </span><span class="c1">// regresa 0 si no esta y 1 si esta</span>
+<span class="n">mapa</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">      </span><span class="c1">// borra la llave x y su valor asociado</span>
+</code></pre></div>
 <h3 id="como-contar-cosas-con-un-mapa">Cómo contar cosas con un mapa</h3>
 <p>Supongamos que tenemos un arreglo de <span class="arithmatex">\(n\)</span> elementos y queremos saber cuantas veces está cada elemento. Podemos tener un mapa <code>M</code> que el valor de <code>M[x]</code> sea cuantas veces está el elemento <code>x</code>.</p>
 <p><code>M.count(x)</code> responde <code>0</code> no existe la llave <code>x</code> y <code>1</code> si existe la llave <code>x</code>.</p>
@@ -890,132 +1026,132 @@ mapa.erase(x);      // borra la llave x y su valor asociado
 <p>Resumen: Javier ahora quiere intercambiar cartas con Martín. Te piden verificar si una cierta cantidad intercambio de cartas son posible. Para ello, tienes que responder si es posible intercambiar la carta <span class="arithmatex">\(x\)</span> por la carta <span class="arithmatex">\(y\)</span>. Se puede intercambiar siempre y cuando Javier disponga de la carta <span class="arithmatex">\(x\)</span>. Te dan la lista de cartas que tiene Javier que pueden ser números del <span class="arithmatex">\(1\)</span> al <span class="arithmatex">\(10^9\)</span>.</p>
 <h4 id="solucion-con-map">Solución con map</h4>
 <p>Podemos ocupar un mapa que cuenta las veces que se tiene cada carta.</p>
-<pre><code class="language-cpp">map&lt;int, int&gt; cartas;
-for (int i = 0; i &lt; N; i++) {
-  int x;
-  cin &gt;&gt; x;
-  cartas[x]++;
-}
+<div class="highlight"><pre><span></span><code><span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cartas</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">N</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cartas</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
 
-int M;
-cin &gt;&gt; M;
-for (int i = 0; i &lt; M; i++) {
-  int x, y;
-  cin &gt;&gt; x &gt;&gt; y;
-  if (cartas.count(x) &amp;&amp; cartas[x] &gt; 0) {
-    cout &lt;&lt; &quot;SI&quot; &lt;&lt; endl;
-    cartas[x]--;
-    cartas[y]++;
-  } else {
-    cout &lt;&lt; &quot;NO&quot; &lt;&lt; endl;
-  }
-}
-</code></pre>
+<span class="kt">int</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
+<span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">M</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">M</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cartas</span><span class="p">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">cartas</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;SI&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cartas</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">--</span><span class="p">;</span>
+<span class="w">    </span><span class="n">cartas</span><span class="p">[</span><span class="n">y</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;NO&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <h2 id="queue">Queue</h2>
 <p>Fila en inglés. Nos permite simular una fila. No conviene usar un <code>vector</code> ya que este no nos permite sacar elementos del principio.</p>
-<pre><code class="language-cpp">queue&lt;int&gt; fila; // crea una fila vacia
-fila.push(x);    // añade un elemento al final
-fila.pop();      // elimina el elemento del principio
-fila.front();    // regresa el valor elemento del principio
-fila.empty();    // pregunta si la fila esta vacia
-                 // regresa false si no esta vacia y true si esta vacia
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">fila</span><span class="p">;</span><span class="w"> </span><span class="c1">// crea una fila vacia</span>
+<span class="n">fila</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">    </span><span class="c1">// añade un elemento al final</span>
+<span class="n">fila</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w">      </span><span class="c1">// elimina el elemento del principio</span>
+<span class="n">fila</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="w">    </span><span class="c1">// regresa el valor elemento del principio</span>
+<span class="n">fila</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span><span class="w">    </span><span class="c1">// pregunta si la fila esta vacia</span>
+<span class="w">                 </span><span class="c1">// regresa false si no esta vacia y true si esta vacia</span>
+</code></pre></div>
 <h3 id="problema-de-registro-ioi">Problema de registro IOI</h3>
 <p>Resumen: Hay una fila que tiene que ser atendida. Existen dos eventos, la llegada de una persona y que Nacho atienda la inscripción. En el primer caso está persona se añade a la cola. En el segundo si no hay nadie en la cola se imprime un <code>1</code> y si hay alguien se imprime el número de la persona que está siendo atendida y se elimina de la cola.</p>
 <h4 id="solucion-con-queue">Solución con queue</h4>
 <p>Resuelve este problema de manera directa usando un <code>queue</code>.</p>
-<pre><code class="language-cpp">queue&lt;int&gt; fila;
-int N;
-cin &gt;&gt; N;
-for (int i = 0; i &lt; N; i++) {
-  string s;
-  int x;
-  cin &gt;&gt; s &gt;&gt; x;
-  if (s == &quot;A&quot;) {
-    fila.push(x);
-  } else {
-    if (fila.empty()) {
-      cout &lt;&lt; 1 &lt;&lt; endl;
-    } else {
-      cout &lt;&lt; fila.front() &lt;&lt; endl;
-      fila.pop();
-    }
-  }
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">fila</span><span class="p">;</span>
+<span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="p">;</span>
+<span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">N</span><span class="p">;</span>
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">N</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">string</span><span class="w"> </span><span class="n">s</span><span class="p">;</span>
+<span class="w">  </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="p">;</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">s</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s">&quot;A&quot;</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">fila</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fila</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">fila</span><span class="p">.</span><span class="n">front</span><span class="p">()</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+<span class="w">      </span><span class="n">fila</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <h2 id="stack">Stack</h2>
 <p>Pila en ingles. Nos permite simular una pila. Donde lo que sacamos es el primer elemento y añadimos elementos es al inicio de la pila. Como una pila de platos.</p>
-<pre><code class="language-cpp">stack&lt;int&gt; pila; // crea una pila vacia
-pila.push(x);    // añade un elemento al principio
-pila.pop();      // elimina el elemento del principio
-pila.top();      // regresa el valor elemento del principio
-pila.empty();    // pregunta si la pila esta vacia
-                 // regresa false si no esta vacia y true si esta vacia
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">stack</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pila</span><span class="p">;</span><span class="w"> </span><span class="c1">// crea una pila vacia</span>
+<span class="n">pila</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">    </span><span class="c1">// añade un elemento al principio</span>
+<span class="n">pila</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w">      </span><span class="c1">// elimina el elemento del principio</span>
+<span class="n">pila</span><span class="p">.</span><span class="n">top</span><span class="p">();</span><span class="w">      </span><span class="c1">// regresa el valor elemento del principio</span>
+<span class="n">pila</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span><span class="w">    </span><span class="c1">// pregunta si la pila esta vacia</span>
+<span class="w">                 </span><span class="c1">// regresa false si no esta vacia y true si esta vacia</span>
+</code></pre></div>
 <h2 id="deque">Deque</h2>
 <p>Es una cola doble. Nos permite sacar y quitar elementos del principio y del final.</p>
-<pre><code class="language-cpp">deque&lt;int&gt; cola; // crea una cola vacia
-cola.push_back(x);    // añade un elemento al final
-cola.push_front(x);   // añade un elemento al principio
-cola.pop_back();      // elimina el elemento del final
-cola.pop_front();     // elimina el elemento del principio
-cola.back();          // regresa el valor elemento del final
-cola.front();         // regresa el valor elemento del principio
-cola.empty();         // pregunta si la cola esta vacia
-                      // regresa false si no esta vacia y true si esta vacia
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">deque</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cola</span><span class="p">;</span><span class="w"> </span><span class="c1">// crea una cola vacia</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">    </span><span class="c1">// añade un elemento al final</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">push_front</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">   </span><span class="c1">// añade un elemento al principio</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">pop_back</span><span class="p">();</span><span class="w">      </span><span class="c1">// elimina el elemento del final</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">pop_front</span><span class="p">();</span><span class="w">     </span><span class="c1">// elimina el elemento del principio</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">back</span><span class="p">();</span><span class="w">          </span><span class="c1">// regresa el valor elemento del final</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">front</span><span class="p">();</span><span class="w">         </span><span class="c1">// regresa el valor elemento del principio</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span><span class="w">         </span><span class="c1">// pregunta si la cola esta vacia</span>
+<span class="w">                      </span><span class="c1">// regresa false si no esta vacia y true si esta vacia</span>
+</code></pre></div>
 <p>Todo lo hace en <span class="arithmatex">\(\mathcal{O}(1)\)</span>.</p>
 <p>Nota: el <code>deque</code> pese a ser muy útil, muchas veces basta con sólo ocupar una cola o una pila. Además que la <code>deque</code> es menos eficiente.</p>
 <h2 id="priority-queue">Priority Queue</h2>
 <p>Es una cola de prioridad. Nos permite tener una cola la cual el primer elemento es siempre el valor mas grande. Por defecto esta ordenada de menor a mayor según el comparador por defecto.</p>
-<pre><code class="language-cpp">priority_queue&lt;int&gt; cola; // crea una cola vacia
-cola.push(x);    // añade un elemento
-cola.pop();      // elimina el elemento del principio
-cola.top();      // regresa el valor elemento del principio
-cola.empty();    // pregunta si la cola esta vacia
-                 // regresa false si no esta vacia y true si esta vacia
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">priority_queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">cola</span><span class="p">;</span><span class="w"> </span><span class="c1">// crea una cola vacia</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">x</span><span class="p">);</span><span class="w">    </span><span class="c1">// añade un elemento</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span><span class="w">      </span><span class="c1">// elimina el elemento del principio</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">top</span><span class="p">();</span><span class="w">      </span><span class="c1">// regresa el valor elemento del principio</span>
+<span class="n">cola</span><span class="p">.</span><span class="n">empty</span><span class="p">();</span><span class="w">    </span><span class="c1">// pregunta si la cola esta vacia</span>
+<span class="w">                 </span><span class="c1">// regresa false si no esta vacia y true si esta vacia</span>
+</code></pre></div>
 <p>Los costos de hacer <code>push</code>, <code>pop</code> y <code>top</code> son <span class="arithmatex">\(\mathcal{O}(\log(n))\)</span>. Mientras que <code>top</code> es <span class="arithmatex">\(\mathcal{O}(1)\)</span>.</p>
 <h3 id="comparar-de-menor-a-mayor">Comparar de menor a mayor</h3>
 <p>Podemos ocupar un comparador personalizado para que la cola de prioridad ordene de mayor a menor.</p>
-<pre><code class="language-cpp">priority_queue&lt;int, vector&lt;int&gt;, greater&lt;int&gt;&gt; cola;
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">priority_queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">,</span><span class="w"> </span><span class="n">greater</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">cola</span><span class="p">;</span>
+</code></pre></div>
 <p>El <code>int</code> se puede cambiar por la clase/tipo de dato de la cola, ejemplo <code>greater&lt;pair&lt;int, int&gt;&gt;</code>.</p>
 <h2 id="algoritmos-ya-implementados-en-la-stl">Algoritmos ya implementados en la STL</h2>
 <ul>
 <li><code>sort</code>: ordena un vector de menor a mayor. El costo es <span class="arithmatex">\(\mathcal{O}(n \log(n))\)</span>.</li>
 </ul>
-<pre><code class="language-cpp">sort(v.begin(), v.end()); // ordena el vector v
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span><span class="w"> </span><span class="c1">// ordena el vector v</span>
+</code></pre></div>
 <ul>
 <li><code>lower_bound</code>: le pasas un vector y un valor y el iterador que apunta al primer elemento mayor o igual al valor. Si no existe retorna el iterador al final del vector. Hace una búsqueda binaria.</li>
 </ul>
-<pre><code class="language-cpp">auto pos = lower_bound(v.begin(), v.end(), x) - v.begin();
-if (pos == v.end()) {
-  // no existe
-} else {
-  if (*v == x) {
-    // x esta en v
-  } else {
-    // hay un elemento mayor a x
-  }
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lower_bound</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pos</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// no existe</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">v</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// x esta en v</span>
+<span class="w">  </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// hay un elemento mayor a x</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 <ul>
 <li><code>upper_bound</code>: lo mismo que <code>lower_bound</code> pero te regresa el primer elemento mayor al valor. Si no existe retorna el iterador al final del vector. Hace una búsqueda binaria.</li>
 </ul>
-<pre><code class="language-cpp">auto pos = upper_bound(v.begin(), v.end(), x) - v.begin();
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">upper_bound</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+</code></pre></div>
 <ul>
 <li><code>find</code>: le pasas un vector y un valor y regresa el iterador al primer elemento igual al valor. Si no existe retorna el iterador al final del vector. Hace una búsqueda lineal.</li>
 </ul>
-<pre><code class="language-cpp">auto pos = find(v.begin(), v.end(), x) - v.begin();
-if (pos == v.end()) {
-  // no existe
-} else {
-  // existe
-}
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">pos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">find</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">();</span>
+<span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">pos</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// no existe</span>
+<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="c1">// existe</span>
+<span class="p">}</span>
+</code></pre></div>
 <h2 id="referencias-de-la-stl">Referencias de la STL</h2>
 <ul>
 <li><a href="http://www.cplusplus.com/reference/">C++ Reference</a></li>
