@@ -42,6 +42,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/images.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -352,11 +354,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#representacion" class="md-nav__link">
-    Representación
+  <a href="#grafos-dirigidos-y-no-dirigidos" class="md-nav__link">
+    Grafos dirigidos y no dirigidos
   </a>
   
-    <nav class="md-nav" aria-label="Representación">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caminos-en-grafos" class="md-nav__link">
+    Caminos en grafos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grafo-conexo" class="md-nav__link">
+    Grafo conexo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo" class="md-nav__link">
+    Ciclo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arboles" class="md-nav__link">
+    Árboles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formas-de-representar-grafos" class="md-nav__link">
+    Formas de representar grafos
+  </a>
+  
+    <nav class="md-nav" aria-label="Formas de representar grafos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -364,12 +401,59 @@
     Matriz de adyacencia
   </a>
   
+    <nav class="md-nav" aria-label="Matriz de adyacencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ventajas-de-usar-la-matriz-de-adyacencia" class="md-nav__link">
+    Ventajas de usar la matriz de adyacencia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desventajas-de-usar-la-matriz-de-adyacencia" class="md-nav__link">
+    Desventajas de usar la matriz de adyacencia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#lista-de-adyacencia" class="md-nav__link">
     Lista de adyacencia
   </a>
+  
+    <nav class="md-nav" aria-label="Lista de adyacencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementacion" class="md-nav__link">
+    Implementación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ventajas-de-usar-la-lista-de-adyacencia" class="md-nav__link">
+    Ventajas de usar la lista de adyacencia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desventajas-de-usar-la-lista-de-adyacencia" class="md-nav__link">
+    Desventajas de usar la lista de adyacencia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -380,22 +464,37 @@
       
         <li class="md-nav__item">
   <a href="#grafos-implicitos" class="md-nav__link">
-    Grafos implicitos
+    Grafos implícitos
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#algoritmos-de-busqueda" class="md-nav__link">
-    Algoritmos de busqueda
+    Algoritmos de búsqueda
   </a>
   
-    <nav class="md-nav" aria-label="Algoritmos de busqueda">
+    <nav class="md-nav" aria-label="Algoritmos de búsqueda">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#bfs" class="md-nav__link">
     BFS
+  </a>
+  
+    <nav class="md-nav" aria-label="BFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementacion-de-bfs" class="md-nav__link">
+    Implementación de BFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encontrar-el-diametro-de-un-grafo" class="md-nav__link">
+    Encontrar el diametro de un grafo
   </a>
   
 </li>
@@ -404,11 +503,29 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dfs" class="md-nav__link">
     DFS
   </a>
+  
+    <nav class="md-nav" aria-label="DFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementacion-de-dfs" class="md-nav__link">
+    Implementación de DFS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -658,11 +775,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#representacion" class="md-nav__link">
-    Representación
+  <a href="#grafos-dirigidos-y-no-dirigidos" class="md-nav__link">
+    Grafos dirigidos y no dirigidos
   </a>
   
-    <nav class="md-nav" aria-label="Representación">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caminos-en-grafos" class="md-nav__link">
+    Caminos en grafos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grafo-conexo" class="md-nav__link">
+    Grafo conexo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ciclo" class="md-nav__link">
+    Ciclo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arboles" class="md-nav__link">
+    Árboles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formas-de-representar-grafos" class="md-nav__link">
+    Formas de representar grafos
+  </a>
+  
+    <nav class="md-nav" aria-label="Formas de representar grafos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -670,12 +822,59 @@
     Matriz de adyacencia
   </a>
   
+    <nav class="md-nav" aria-label="Matriz de adyacencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ventajas-de-usar-la-matriz-de-adyacencia" class="md-nav__link">
+    Ventajas de usar la matriz de adyacencia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desventajas-de-usar-la-matriz-de-adyacencia" class="md-nav__link">
+    Desventajas de usar la matriz de adyacencia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
   <a href="#lista-de-adyacencia" class="md-nav__link">
     Lista de adyacencia
   </a>
+  
+    <nav class="md-nav" aria-label="Lista de adyacencia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementacion" class="md-nav__link">
+    Implementación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ventajas-de-usar-la-lista-de-adyacencia" class="md-nav__link">
+    Ventajas de usar la lista de adyacencia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desventajas-de-usar-la-lista-de-adyacencia" class="md-nav__link">
+    Desventajas de usar la lista de adyacencia
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -686,22 +885,37 @@
       
         <li class="md-nav__item">
   <a href="#grafos-implicitos" class="md-nav__link">
-    Grafos implicitos
+    Grafos implícitos
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#algoritmos-de-busqueda" class="md-nav__link">
-    Algoritmos de busqueda
+    Algoritmos de búsqueda
   </a>
   
-    <nav class="md-nav" aria-label="Algoritmos de busqueda">
+    <nav class="md-nav" aria-label="Algoritmos de búsqueda">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#bfs" class="md-nav__link">
     BFS
+  </a>
+  
+    <nav class="md-nav" aria-label="BFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementacion-de-bfs" class="md-nav__link">
+    Implementación de BFS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encontrar-el-diametro-de-un-grafo" class="md-nav__link">
+    Encontrar el diametro de un grafo
   </a>
   
 </li>
@@ -710,11 +924,29 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#dfs" class="md-nav__link">
     DFS
   </a>
+  
+    <nav class="md-nav" aria-label="DFS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#implementacion-de-dfs" class="md-nav__link">
+    Implementación de DFS
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -747,44 +979,135 @@
 </div>
 </div>
 </div>
-<p>Un grafo consiste de un conjunto de nodos y un conjunto de aristas. Las aristas conectan (relacionan) dos nodos.</p>
-<p><img alt="Grafo" src="../../src/grafo_ejemplo.png" /></p>
-<p>En el campamento sólo vamos a ver grafos simples. Es decir, que no contienen <em>lopps</em> (aristas que conectan a un nodo consigo mismo) ni <em>aristas paralelas</em> (más de una arista que conectan el mismo par de nodos).</p>
-<p>Las aristas pueden ser dirigidas o no dirigidas. Si son dirigidas, la arista va de un nodo a otro. Si no son dirigidas, la arista va de un nodo a otro y viceversa.</p>
-<p>Grafos con dirigidos y no dirigidos.</p>
-<p>Camino: secuencia de nodos (distintos) unidos por aristas.</p>
-<p>Largo del camino: cantidad de aristas.</p>
-<p>Distancia: largo del camino mas corto entre dos nodos.</p>
-<p>Grafo conexo: si existe un camino entre todos los nodos. Desde cualquier nodo se puede llegar a cualquier otro.</p>
+<p>Un grafo <span class="arithmatex">\(G\)</span> consiste de un conjunto de nodos <span class="arithmatex">\(V\)</span> y un conjunto de aristas <span class="arithmatex">\(E\)</span>. Las aristas conectan (relacionan) dos nodos.</p>
+<p><img alt="Grafo" class="image-center" src="../../src/grafo_ejemplo.png" /></p>
+<p>En el campamento sólo vamos a ver grafos simples. Es decir, que no contienen <em>loops</em> (aristas que conectan a un nodo consigo mismo) ni <em>aristas paralelas</em> (más de una arista que conectan el mismo par de nodos).</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Ejemplo de grafo con loops</label><label for="__tabbed_2_2">Ejemplo de grafo con aristas paralelas</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Grafo simple" class="image-center" src="../../src/grafo_loops.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Grafo simple" class="image-center" src="../../src/grafo_paralelas.png" /></p>
+</div>
+</div>
+</div>
+<h2 id="grafos-dirigidos-y-no-dirigidos">Grafos dirigidos y no dirigidos</h2>
+<p>Las aristas pueden ser dirigidas o no dirigidas. Si son dirigidas, la arista va de un nodo a otro con un único sentido. Si no son dirigidas, la arista va de un nodo a otro en ambos sentidos.</p>
+<p><img alt="Grafo dirigido y no dirigido" class="image-center" src="../../src/grafo_dirigido_y_no_dirigido.png" /></p>
+<h2 id="caminos-en-grafos">Caminos en grafos</h2>
+<p>También existe la noción de un recorrido a través de un grafo.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Grafo original</label><label for="__tabbed_3_2">Camino</label><label for="__tabbed_3_3">Largo del camino</label><label for="__tabbed_3_4">Distancia entre dos nodos</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Grafo original" class="image-center" src="../../src/grafo_sin_camino.png" /></p>
+</div>
+<div class="tabbed-block">
+<blockquote>
+<p>El <strong>camino</strong> es una secuencia de nodos (distintos) unidos por aristas.</p>
+</blockquote>
+<p><img alt="Camino" class="image-center" src="../../src/grafo_con_camino.png" /></p>
+<p>En este ejemplo el camino es: <span class="arithmatex">\(1 \rightarrow 3 \rightarrow 2 \rightarrow 4\)</span>.</p>
+</div>
+<div class="tabbed-block">
+<blockquote>
+<p>El <strong>largo</strong> del camino es la cantidad de aristas que tiene el camino.</p>
+</blockquote>
+<p><img alt="Ciclo" class="image-center" src="../../src/grafo_con_camino_y_largo.png" /></p>
+</div>
+<div class="tabbed-block">
+<blockquote>
+<p>La <strong>distancia</strong> entre dos nodos es el camino más corto entre dos nodos.</p>
+</blockquote>
+<p><img alt="Distancia" class="image-center" src="../../src/grafo_con_camino_y_distancia.png" /></p>
+<p>Puede haber multiples caminos que llevan de <span class="arithmatex">\(1\)</span> a <span class="arithmatex">\(4\)</span> pero se toma siempre el de menor largo para definir la distancia.</p>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="grafo-conexo">Grafo conexo</h2>
+<p>Un grafo es conexo si existe un camino entre cada par de nodos. Desde cualquier nodo se puede llegar a cualquier otro.</p>
+<p><img alt="Grafo conexo y no conexo" class="image-center" src="../../src/grafo_conexo_y_no_conexo.png" /></p>
+<h2 id="ciclo">Ciclo</h2>
 <p>Un ciclo (simple) es un camino que empieza y termina en el mismo nodo.</p>
-<p>Un árbol es un grafo conexo sin ciclos. Y tiene ciertas propiedades. (ponerlas)</p>
-<h3 id="representacion">Representación</h3>
-<h4 id="matriz-de-adyacencia">Matriz de adyacencia</h4>
-<!-- Poner imagen de la matriz de adyacencia. -->
-
-<p>Las ventajas de usar esta representacion es que es facil de implementar y es facil de ver si dos nodos estan conectados. Pero es ineficiente en memoria y en tiempo.</p>
-<p>Las desventajas son ver los vecinos de un nodo, y ver si dos nodos estan conectados. Y en memoria siempre ocupa <span class="arithmatex">\(\mathcal{O}(|V|^2)\)</span>.</p>
-<h4 id="lista-de-adyacencia">Lista de adyacencia</h4>
-<p>Es la representacion mas comun. Es una lista de listas. Donde cada lista es la lista de vecinos de un nodo. Se lista para cada nodo, sus vecinos.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Grafo original</label><label for="__tabbed_4_2">Ciclo</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Grafo original" class="image-center" src="../../src/grafo_sin_ciclo.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Ciclo" class="image-center" src="../../src/grafo_con_ciclo.png" /></p>
+<p>El ciclo que se forma es: <span class="arithmatex">\(2 \rightarrow 3 \rightarrow 7 \rightarrow 4 \rightarrow 6 \rightarrow 2\)</span>.</p>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="arboles">Árboles</h2>
+<p>Un árbol es un grafo conexo sin ciclos. Tiene muchas definiciones equivalentes.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Árbol desordenado</label><label for="__tabbed_5_2">Árbol con vista jerárquica</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><img alt="Árbol como grafo" class="image-center" src="../../src/arbol_desordenado.png" /></p>
+</div>
+<div class="tabbed-block">
+<p><img alt="Árbol como grafo" class="image-center" src="../../src/arbol_ordenado.png" /></p>
+</div>
+</div>
+</div>
+<h2 id="formas-de-representar-grafos">Formas de representar grafos</h2>
+<h3 id="matriz-de-adyacencia">Matriz de adyacencia</h3>
+<p>La matriz de adyacencia es una matriz cuadrada de <span class="arithmatex">\(|V|\)</span> por <span class="arithmatex">\(|V|\)</span>, donde <span class="arithmatex">\(|V|\)</span> es la cantidad de nodos. Si hay una arista del nodo <span class="arithmatex">\(i\)</span> al nodo <span class="arithmatex">\(j\)</span>, entonces en la posición <span class="arithmatex">\((i,j)\)</span> de la matriz hay un 1. Si no hay una arista, entonces hay un 0.</p>
+<p><img alt="Matriz de adyacencia" class="image-center" src="../../src/matriz_de_adyacencia.png" /></p>
+<h4 id="ventajas-de-usar-la-matriz-de-adyacencia">Ventajas de usar la matriz de adyacencia</h4>
+<ul>
+<li>Es fácil de implementar.</li>
+<li>Ver si dos nodos están conectados es <span class="arithmatex">\(\mathcal{O}(1)\)</span>.</li>
+<li>Agregar y eliminar aristas es <span class="arithmatex">\(\mathcal{O}(1)\)</span>.</li>
+</ul>
+<h4 id="desventajas-de-usar-la-matriz-de-adyacencia">Desventajas de usar la matriz de adyacencia</h4>
+<ul>
+<li>Revisar el <em>vecindario</em> de un nodo es ineficiente ya que hay que revisar toda la fila, <span class="arithmatex">\(\mathcal{O}(|V|)\)</span>.</li>
+<li>En memoria siempre ocupa <span class="arithmatex">\(\mathcal{O}(|V|^2)\)</span>.</li>
+</ul>
+<h3 id="lista-de-adyacencia">Lista de adyacencia</h3>
+<p>En la lista de adyacencia, se guarda una lista de vecinos para cada nodo. Es la representación más común.</p>
+<p><img alt="Lista de adyacencia" class="image-center" src="../../src/lista_de_adyacencia.png" /></p>
 <!-- Poner imagen de la lista de adyacencia. -->
 
-<p>Implementacion:</p>
-<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">;</span>
+<h4 id="implementacion">Implementación</h4>
+<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">;</span><span class="w"> </span><span class="c1">// crea una lista de adyacencia vacia</span>
 
-<span class="n">adj</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="p">{});</span>
+<span class="n">adj</span><span class="p">.</span><span class="n">assign</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="p">{});</span><span class="w">       </span><span class="c1">// define el tamaño de la lista de adyacencia</span>
+<span class="w">                         </span><span class="c1">// con n nodos y un vector vacio</span>
 
 <span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">;</span>
-<span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
-<span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="p">);</span><span class="w"> </span><span class="c1">// si no es dirigido</span>
+<span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">v</span><span class="p">);</span><span class="w">     </span><span class="c1">// agrega un vecino v al nodo u</span>
+<span class="n">adj</span><span class="p">[</span><span class="n">v</span><span class="p">].</span><span class="n">push_back</span><span class="p">(</span><span class="n">u</span><span class="p">);</span><span class="w">     </span><span class="c1">// si no es dirigido se agrega el vecino u al nodo v</span>
+
+<span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">])</span><span class="w"> </span><span class="p">{</span><span class="w">   </span><span class="c1">// recorre los vecinos del nodo u</span>
+<span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span><span class="w">   </span><span class="c1">// imprime el vecino v</span>
+<span class="p">}</span>
 </code></pre></div>
-<p>Las ventajas son que obtener los vecinos de un nodo es facil, y ocupa menos memoria. Ademas el espacio de memoria <span class="arithmatex">\(\mathcal{O}(|V| + |E|)\)</span>.</p>
-<p>La desventaja es que saber si dos nodos conectados es de complejidad lineal. Y pasa lo mismo con eliminar una arista.</p>
-<h3 id="grafos-implicitos">Grafos implicitos</h3>
-<p>Algunas veces la estructura de un problema tiene asociado un grafo implicito. Por ejemplo, el problema del laberinto.</p>
-<h3 id="algoritmos-de-busqueda">Algoritmos de busqueda</h3>
-<h4 id="bfs">BFS</h4>
-<p>BFS es un algoritmo de busqueda en grafos. Se usa para encontrar el camino mas corto entre dos nodos.</p>
-<p>Se usa una cola para ir guardando los nodos que se van a visitar. Y se va visitando cada nodo y se van guardando los vecinos en la cola.</p>
+<h4 id="ventajas-de-usar-la-lista-de-adyacencia">Ventajas de usar la lista de adyacencia</h4>
+<ul>
+<li>Recorrer los vecinos de un nodo es lineal en el tamaño de la respuesta.</li>
+<li>El espacio de memoria es <span class="arithmatex">\(\mathcal{O}(|V| + |E|)\)</span>.</li>
+</ul>
+<h4 id="desventajas-de-usar-la-lista-de-adyacencia">Desventajas de usar la lista de adyacencia</h4>
+<ul>
+<li>Saber si dos nodos conectados es de complejidad lineal.</li>
+<li>Pasa lo mismo con eliminar una arista.</li>
+</ul>
+<h2 id="grafos-implicitos">Grafos implícitos</h2>
+<p>Algunas veces la estructura de un problema tiene asociado un grafo implícito. Por ejemplo, las casillas a las que puede ir un caballo en un tablero de ajedrez.</p>
+<p><img alt="Grafo implícito" class="image-center" src="../../src/movimientos_del_caballo.png" /></p>
+<h2 id="algoritmos-de-busqueda">Algoritmos de búsqueda</h2>
+<h3 id="bfs">BFS</h3>
+<p>BFS o búsqueda en anchura es un algoritmo que se usa para recorrer un grafo. Se usa para encontrar el camino más corto entre dos nodos.</p>
+<p>El algoritmo se basa en ir visitando los nodos de un grafo de forma que se visiten todos los vecinos de un nodo antes de visitar los vecinos de los vecinos.</p>
+<p><img alt="BFS" class="image-center" src="../../src/bfs.gif" /></p>
+<h4 id="implementacion-de-bfs">Implementación de BFS</h4>
+<p>Se usa una cola para ir guardando los nodos que se van a visitar. Cuando se visita cada nodo, se va guardando los vecinos aun no visitados de este nodo en la cola.</p>
 <div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">;</span>
 <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">dist</span><span class="p">;</span>
 <span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
@@ -836,13 +1159,35 @@
 <li>Su complejidad es <span class="arithmatex">\(\mathcal{O}(|V| + |E|)\)</span>. Porque se para en cada nodo y se revisan todas las aristas dos veces, una por cada extremo de la arista.</li>
 <li>Con BFS podemos calcular la distancia de un nodo a todos los demás nodos.</li>
 </ul>
-<p>Encontrar el diametro de un grafo.</p>
-<!-- explicar como hacer con dos BFS -->
-
+<h4 id="encontrar-el-diametro-de-un-grafo">Encontrar el diametro de un grafo</h4>
+<p>El <em>diámetro</em> de un grafo es la distancia máxima entre todos los pares de nodos. Para encontrarlo.</p>
+<p>Puede haber más de un camino con el mismo largo que el diámetro.</p>
+<p>Encontrar el diámetro en un árbol se puede hacer en tiempo <span class="arithmatex">\(\mathcal{O}(|V|)\)</span>.</p>
+<ul>
+<li>Escogemos un nodo <span class="arithmatex">\(s\)</span> cualquiera.</li>
+<li>Desde <span class="arithmatex">\(s\)</span> hacemos bfs para encontrar algún nodo <span class="arithmatex">\(u\)</span> a distancia máxima.</li>
+<li>Desde <span class="arithmatex">\(u\)</span> hacemos bfs para encontrar algún nodo <span class="arithmatex">\(v\)</span> a distancia máxima.</li>
+<li>La distancia entre <span class="arithmatex">\(u\)</span> y <span class="arithmatex">\(v\)</span> será el diámetro.</li>
+</ul>
+<p><img alt="Diametro de un grafo" class="image-center" src="../../src/diametro.gif" /></p>
 <h3 id="dfs">DFS</h3>
-<p>DFS es un algoritmo de busqueda en grafos. Se usa para encontrar el camino mas corto entre dos nodos.</p>
-<p>Podriamos ocupar la misma implementacion del BFS, salvo que en vez de una cola deberiamos ocupar una stack (mas o menos).</p>
-<!-- Colocar imagen de un DFS -->
+<p>DFS es un algoritmo de busqueda en grafos. Se usa para encontrar el camino más corto entre dos nodos, en grafos sin peso.</p>
+<p>El algoritmo se basa en ir visitando los nodos de un grafo de forma que se visita el primer vecino de un nodo antes de visitar los vecinos de los vecinos y así sucesivamente.</p>
+<p><img alt="DFS" class="image-center" src="../../src/dfs.gif" /></p>
+<h4 id="implementacion-de-dfs">Implementación de DFS</h4>
+<p>Vamos a usar un vector de booleanos para saber si un nodo ya fue visitado o no.</p>
+<div class="highlight"><pre><span></span><code><span class="n">vector</span><span class="o">&lt;</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">adj</span><span class="p">;</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span><span class="w"> </span><span class="n">visited</span><span class="p">;</span>
+
+<span class="kt">void</span><span class="w"> </span><span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">u</span><span class="p">){</span>
+<span class="w">    </span><span class="n">visited</span><span class="p">[</span><span class="n">u</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">v</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">adj</span><span class="p">[</span><span class="n">u</span><span class="p">]){</span>
+<span class="w">        </span><span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">v</span><span class="p">]){</span>
+<span class="w">            </span><span class="n">dfs</span><span class="p">(</span><span class="n">v</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
 
 
 
